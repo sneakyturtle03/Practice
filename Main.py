@@ -77,12 +77,38 @@ def click2():
 ebutton = Button(root4,text="Enter your name",command=click2)
 ebutton.grid(row=0,column=1)
 
-root4.mainloop()
+#root4.mainloop()
 
 
 
 # creating a calculator here:
 
+rootc = Tk()
+rootc.title("Basic Calculator")
+
+#function #1 will need to be able to pass numbers too it
+
+#function #2
 
 
 
+# creating numbers 
+number1 = Button(rootc,text= "1",padx=10,pady=10).grid(row=3,column=0)
+number2 = Button(rootc,text= "2",padx=10,pady=10).grid(row=3,column=1)
+number3 = Button(rootc,text= "3",padx=10,pady=10).grid(row=3,column=2)
+number4 = Button(rootc,text= "4",padx=10,pady=10).grid(row=2,column=0)
+number5 = Button(rootc,text= "5",padx=10,pady=10).grid(row=2,column=1)
+number6 = Button(rootc,text= "6",padx=10,pady=10).grid(row=2,column=2)
+number7 = Button(rootc,text= "7",padx=10,pady=10).grid(row=1,column=0)
+number8 = Button(rootc,text= "8",padx=10,pady=10).grid(row=1,column=1)
+number9 = Button(rootc,text= "9",padx=10,pady=10).grid(row=1,column=2)
+number0 = Button(rootc,text= "0",padx=10,pady=10).grid(row=4,column=0)
+
+#clear
+bClear = Button(rootc, text= "Clear",padx=20,pady=10).grid(row=4, column=1)
+
+#equal and plus button
+eqb = Button(rootc, text="=",padx=20,pady=10).grid(row=5,column=1)
+pls = Button(rootc, text="+",padx=10,pady=10).grid(row=5,column=0)
+
+rootc.mainloop()
